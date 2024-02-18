@@ -1,0 +1,17 @@
+[project]
+name = "TEXNANO"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["AngelB26 <asha4angelsb@gmail.com>"]
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[tasks]
+
+[dependencies]
+python = ">=3.12.2,<3.13"
+numpy = ">=1.26.4,<1.27"
+matplotlib = ">=3.8.3,<3.9"
+sklearn-pandas = ">=2.2.0,<2.3"
+optuna = ">=3.5.0,<3.6"
+wandb = ">=0.16.3,<0.17"

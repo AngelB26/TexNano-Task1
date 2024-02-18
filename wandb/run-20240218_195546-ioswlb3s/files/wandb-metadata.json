@@ -1,0 +1,47 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.12.2",
+    "heartbeatAt": "2024-02-18T14:25:49.314114",
+    "startedAt": "2024-02-18T14:25:46.447667",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\Dell\\Downloads\\TEXNANO\\task.py",
+    "codePathLocal": "task.py",
+    "codePath": "task.py",
+    "host": "DESKTOP-KMRD1OQ",
+    "username": "Dell",
+    "executable": "C:\\Users\\Dell\\Downloads\\TEXNANO\\.pixi\\envs\\default\\python.EXE",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1600.0,
+        "min": 0.0,
+        "max": 1800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1600.0,
+            "min": 0.0,
+            "max": 1800.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 117.8896713256836,
+            "used": 71.07229995727539
+        }
+    },
+    "gpu": "NVIDIA GeForce MX130",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce MX130",
+            "memory_total": 2147483648
+        }
+    ],
+    "memory": {
+        "total": 7.781410217285156
+    }
+}

@@ -1,0 +1,44 @@
+
+[32m[I 2024-02-18 19:55:49,350][39m A new study created in memory with name: no-name-0441ea8e-df4d-4ec4-bbb6-652b2b5add6d
+[32m[I 2024-02-18 19:55:58,217][39m Trial 0 finished with value: 0.9499744729121471 and parameters: {'penality': 'l1', 'inverse_of_regularization_strength': 0.8236840219157104, 'fit_intercept': True, 'intercept_scaling': 0.9449335205337416}. Best is trial 0 with value: 0.9499744729121471.
+[33m[W 2024-02-18 19:55:58,720][39m Trial 1 failed with parameters: {'penality': 'none', 'solver_none': 'saga', 'inverse_of_regularization_strength': 0.6656712298269047, 'fit_intercept': True, 'intercept_scaling': 0.23226239268256255} because of the following error: InvalidParameterError("The 'penalty' parameter of LogisticRegression must be a str among {'elasticnet', 'l2', 'l1'} or None. Got 'none' instead.").
+Traceback (most recent call last):
+  File "C:\Users\Dell\Downloads\TEXNANO\.pixi\envs\default\Lib\site-packages\optuna\study\_optimize.py", line 200, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\TEXNANO\task.py", line 142, in objective
+    logisticRegr.fit(x_train, y_train)
+  File "C:\Users\Dell\Downloads\TEXNANO\.pixi\envs\default\Lib\site-packages\sklearn\base.py", line 1467, in wrapper
+    estimator._validate_params()
+  File "C:\Users\Dell\Downloads\TEXNANO\.pixi\envs\default\Lib\site-packages\sklearn\base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "C:\Users\Dell\Downloads\TEXNANO\.pixi\envs\default\Lib\site-packages\sklearn\utils\_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'penalty' parameter of LogisticRegression must be a str among {'elasticnet', 'l2', 'l1'} or None. Got 'none' instead.
+[33m[W 2024-02-18 19:55:58,723][39m Trial 1 failed with value None.
+Traceback (most recent call last):
+  File "C:\Users\Dell\Downloads\TEXNANO\task.py", line 170, in <module>
+    main()
+  File "C:\Users\Dell\Downloads\TEXNANO\task.py", line 160, in main
+    study.optimize(objective, n_trials=5)
+  File "C:\Users\Dell\Downloads\TEXNANO\.pixi\envs\default\Lib\site-packages\optuna\study\study.py", line 451, in optimize
+    _optimize(
+  File "C:\Users\Dell\Downloads\TEXNANO\.pixi\envs\default\Lib\site-packages\optuna\study\_optimize.py", line 66, in _optimize
+    _optimize_sequential(
+  File "C:\Users\Dell\Downloads\TEXNANO\.pixi\envs\default\Lib\site-packages\optuna\study\_optimize.py", line 163, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\TEXNANO\.pixi\envs\default\Lib\site-packages\optuna\study\_optimize.py", line 251, in _run_trial
+    raise func_err
+  File "C:\Users\Dell\Downloads\TEXNANO\.pixi\envs\default\Lib\site-packages\optuna\study\_optimize.py", line 200, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\TEXNANO\task.py", line 142, in objective
+    logisticRegr.fit(x_train, y_train)
+  File "C:\Users\Dell\Downloads\TEXNANO\.pixi\envs\default\Lib\site-packages\sklearn\base.py", line 1467, in wrapper
+    estimator._validate_params()
+  File "C:\Users\Dell\Downloads\TEXNANO\.pixi\envs\default\Lib\site-packages\sklearn\base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "C:\Users\Dell\Downloads\TEXNANO\.pixi\envs\default\Lib\site-packages\sklearn\utils\_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'penalty' parameter of LogisticRegression must be a str among {'elasticnet', 'l2', 'l1'} or None. Got 'none' instead.
